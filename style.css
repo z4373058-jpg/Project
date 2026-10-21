@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: "vazir light";
+    src: url("") format("truetype");
+}
+
+body {
+    font-family: "vazir light";
+}
+.header {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header a {
+    text-decoration: none;
+    color: #14213d;
+    padding: 16px;
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
