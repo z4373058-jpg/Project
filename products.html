@@ -10,84 +10,145 @@
 
 <body>
     <header class="header">
-        <div class="head-start">
-            <a href="index.html" class="logo" style="color: #0f766e;">بازارینو</a>
-            <nav class="main-nav">
-                <a href="index.html">خانه</a>
-                <a href="index.html">فروشگاه</a>
-                <a href="#">دسته بندی</a>
-                <a href="#">درباره ما</a>
-            </nav>
-        </div>
+        <a href="index.html" class="logo">بازارینو</a>
+
+        <nav class="main-nav">
+            <a href="index.html">خانه</a>
+            <a href="index.html" class="active">فروشگاه</a>
+            <a href="#">دسته بندی</a>
+            <a href="#">درباره ما</a>
+        </nav>
 
         <div class="head-end">
             <a href="#" class="cart-link">سبد خرید</a>
             <a href="#" class="login-link">ورود</a>
         </div>
+
     </header>
 
-    <main class="main">
-        <div>
-            <p>
-                خانه/
-                <a href="">فروشگاه</a>
-            </p>
-            <h2>فروشگاه</h2>
-            <p>محصولات منتخب را با خیال راحت مقایسه و انتخاب کنید.</p>
+    <section class="page-intro">
+        <div class="breadcumb">
+            <a href="index.html">خانه</a>
+            <span>/</span>
+            <span>فروشگاه</span>
         </div>
 
+        <h1>فروشگاه</h1>
+        <p>محصولات منتخب را با خیال راحت مقایسه و انتخاب کنید
+        <p>
+    </section>
+
+    <main class="main">
         <aside class="sidebar">
-
             <h3>فیلتر محصولات</h3>
-            <h4>دسته بندی</h4>
-            <div> <input type="checkbox" name="digital"> دیجیتال و گجت</div>
-            <div> <input type="checkbox" name="digital"> خانه و سبک زنگی </div>
-            <div> <input type="checkbox" name="digital"> لوازم شخصی </div>
 
-            <h4>محدوده قیمت</h4>
-            <div> <input type="radio" name="price"> کمتر از 2 میلیون </div>
-            <div> <input type="radio" name="price"> 2 تا 5 میلیون </div>
-            <div> <input type="radio" name="price"> بیشتر از 5 میلیون </div>
+            <div class="filter-group">
+                <h4>دسته بندی</h4>
+                <label> <input type="checkbox" name="category" value="digital"> دیجیتال و گجت</label>
+                <label> <input type="checkbox" name="category" value="digital"> خانه و سبک زنگی </label>
+                <label> <input type="checkbox" name="category" value="digital"> لوازم شخصی </label>
+            </div>
 
-            <h4>امتیاز کاربران</h4>
-            <div> <input type="radio" name="" id="">4 ستاره به بالا </div>
+            <div class="filter-group">
+                <h4>محدوده قیمت</h4>
+                <label> <input type="radio" name="price" value="low"> کمتر از 2 میلیون </label>
+                <label> <input type="radio" name="price" value="medium"> 2 تا 5 میلیون </label>
+                <label> <input type="radio" name="price" value="high"> بیشتر از 5 میلیون </label>
+            </div>
 
+            <div class="filter-group">
+                <h4>امتیاز کاربران</h4>
+                <label> <input type="radio" name="" id="">4 ستاره به بالا </label>
+            </div>
         </aside>
 
-        <div class="main-div">
-        <div class="search">
-            <input type="text" placeholder="جستجو در محصولات...">
-        </div>
-        <div>
-            <p>مرتب سازی:پر فروش ترین</p>
-            <p>نمایش 6 محصول</p>
-        </div>
-        </div>
-        <section>
-            <div>
-                <div>
-                    <span></span>
-                    <p></p>
-                    <p></p>
+        <section class="products-section">
+            <div class="toolbar">
+                <input class="search-input" type="search" placeholder="جستجو در محصولات..."
+                    aria-label="جستجو در محصولات">
+
+                <div class="sort-row">
+                    <label for="sort">مرتب سازی:</label>
+                    <select id="sort">
+                        <option>پرفروش ترین</option>
+                        <option> جدیدترین</option>
+                        <option> ارزان ترین</option>
+                        <option> گران ترین</option>
+                    </select>
+                    <span>نمایش 6 محصول</span>
                 </div>
+            </div>
+
+            <div class="container">
+                <article class="ad">
+                    <img src="./img/Screenshot 2026-10-19 134100.png" alt="هدفون بلوتوثی انکر">
+                    <div>
+                        <h2>هدفون بلوتوثی انکر مدل SoundCore R50i</h2>
+                        <p>دارای درگاه USB Type-C، فناوری کاهش نویز مکالمه و مقاومت در برابر رطوبت.</p>
+                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                    </div>
+                </article>
+
+                <article class="ad">
+                    <img src="./img/07c5c094b77a8abc82d19ac2db89e7974fcf4568_1788182319.png" alt="ساعت هوشمند لیواکس">
+                    <div class="product-info">
+                        <h2>ساعت هوشمند لیواکس مدل GS-59</h2>
+                        <p>ساعت هوشمند ۴۹ میلی‌متری با بند سیلیکونی.</p>
+                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                    </div>
+                </article>
+
+                <article class="ad">
+                    <img src="./img/29082e3b70092f74b4e9fcfa95d1ec7fd00226b6_1786911148.png"
+                        alt="دوربین دیجیتال کانن EOS 2000D">
+                    <div class="product-info">
+                        <h2>دوربین دیجیتال کانن EOS 2000D</h2>
+                        <p>به همراه لنز ۱۸ تا ۵۵ میلی‌متر IS II.</p>
+                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                    </div>
+                </article>
+
+                <article class="ad">
+                    <img src="./img/17ae63e25a8aaf344e82ff6184f75cc77e15c0c7_1788177806.png"
+                        alt="ساعت هوشمند KX33 PLUS">
+                    <div class="product-info">
+                        <h2>ساعت هوشمند KX33 PLUS</h2>
+                        <p>ساعت هوشمند ۴۶ میلی‌متری با بند سیلیکونی.</p>
+                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                    </div>
+                </article>
+
+                <article class="ad">
+                    <img src="./img/18438c2cc0bbf359df1024d0342135410fe29084_1791277938.png"
+                        alt="هدفون بلوتوثی موزیک آپولو">
+                    <div class="product-info">
+                        <h2>هدفون بلوتوثی موزیک آپولو RAY/21/RO</h2>
+                        <p>هدفون بی‌سیم با طراحی ساده و زیبا.</p>
+                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                    </div>
+                </article>
+
+                <article class="ad">
+                    <img src="./img/2cb5cafe0d6397fef7c6c45cf3d6bbdc70febbf5_1786538653.png"
+                        alt="لپ‌تاپ لنوو V15 G4 IRU">
+                    <div class="product-info">
+                        <h2>لپ‌تاپ لنوو V15 G4 IRU</h2>
+                        <p>پردازنده Core i3، رم ۸ گیگابایت، حافظه SSD با ظرفیت ۲۵۶ گیگابایت و نمایشگر Full HD.</p>
+                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <p>
-                بازارینو؛ خرید ساده و مطمئن
-            </p>
+    <footer class="footer">
+        <p>بازارینو؛ خرید ساده و مطمئن</p>
+        <div class="footer-link">
+            <a href="#">پشتیبانی</a>
+            <a href="#">قوانین و شرایط</a>
+            <a href="#">اینستاگرام</a>
         </div>
-        <div>
-            <a href="">پشتیبانی</a>
-            <a href="">قوانین و شرایط</a>
-            <a href="">اینستاگرام</a>
-        </div>
-        <div>
-            <p>&copy; 1405</p>
-        </div>
+        <p>&copy; 1405</p>
     </footer>
 </body>
 
