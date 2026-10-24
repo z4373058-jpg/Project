@@ -10,142 +10,194 @@
 
 <body>
     <header class="header">
-        <a href="index.html" class="logo">بازارینو</a>
+        <a href="products.html" class="logo">بازارینو</a>
 
         <nav class="main-nav">
-            <a href="index.html">خانه</a>
-            <a href="index.html" class="active">فروشگاه</a>
-            <a href="#">دسته بندی</a>
+            <a href="products.html">خانه</a>
+            <a href="products.html" class="active">فروشگاه</a>
+            <a href="#">دسته‌بندی‌ها</a>
             <a href="#">درباره ما</a>
         </nav>
 
         <div class="head-end">
-            <a href="#" class="cart-link"> سبد خرید .2</a>
-            <a href="#" class="login-link">ورود</a>
+            <a href="#" class="cart-link">سبد خرید <span class="cart-badge">۲</span></a>
+            <a href="register.html" class="login-link">ورود</a>
         </div>
-
     </header>
 
     <section class="page-intro">
         <div class="breadcumb">
-            <a href="index.html">خانه</a>
+            <a href="products.html">خانه</a>
             <span>/</span>
             <span>فروشگاه</span>
         </div>
-
         <h1>فروشگاه</h1>
         <p>محصولات منتخب را با خیال راحت مقایسه و انتخاب کنید.</p>
     </section>
 
     <main class="main">
         <aside class="sidebar">
-            <h3>فیلتر محصولات</h3>
+            <h3 class="sidebar__title">فیلتر محصولات</h3>
 
             <div class="filter-group">
-                <h4>دسته‌بندی</h4>
-
-                <label>
-                    <input type="checkbox" name="category" value="digital">
+                <h4 class="filter-group__title">دسته‌بندی</h4>
+                <label class="custom-check">
+                    <input type="checkbox" name="category" value="digital" class="custom-check__input" checked>
+                    <span class="custom-check__box"></span>
                     دیجیتال و گجت
                 </label>
-
-                <label>
-                    <input type="checkbox" name="category" value="home">
+                <label class="custom-check">
+                    <input type="checkbox" name="category" value="home" class="custom-check__input">
+                    <span class="custom-check__box"></span>
                     خانه و سبک زندگی
                 </label>
-
-                <label>
-                    <input type="checkbox" name="category" value="personal">
+                <label class="custom-check">
+                    <input type="checkbox" name="category" value="personal" class="custom-check__input">
+                    <span class="custom-check__box"></span>
                     لوازم شخصی
                 </label>
             </div>
 
             <div class="filter-group">
-                <h4>محدوده قیمت</h4>
-                <label> <input type="radio" name="price" value="low"> کمتر از 2 میلیون </label>
-                <label> <input type="radio" name="price" value="medium"> 2 تا 5 میلیون </label>
-                <label> <input type="radio" name="price" value="high"> بیشتر از 5 میلیون </label>
+                <h4 class="filter-group__title">محدوده قیمت</h4>
+                <label class="custom-radio">
+                    <input type="radio" name="price" value="low" class="custom-radio__input">
+                    <span class="custom-radio__circle"></span>
+                    کمتر از ۲ میلیون
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="price" value="medium" class="custom-radio__input">
+                    <span class="custom-radio__circle"></span>
+                    ۲ تا ۵ میلیون
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="price" value="high" class="custom-radio__input">
+                    <span class="custom-radio__circle"></span>
+                    بیشتر از ۵ میلیون
+                </label>
             </div>
 
             <div class="filter-group">
-                <h4>امتیاز کاربران</h4>
-                <label> <input type="radio" name="" id="">4 ستاره به بالا </label>
+                <h4 class="filter-group__title">امتیاز کاربران</h4>
+                <label class="custom-check">
+                    <input type="checkbox" name="rating" value="4" class="custom-check__input">
+                    <span class="custom-check__box"></span>
+                    ۴ ستاره به بالا
+                </label>
             </div>
         </aside>
 
         <section class="products-section">
             <div class="toolbar">
-                <input class="search-input" type="search" placeholder="جستجو در محصولات..."
-                    aria-label="جستجو در محصولات">
+                <input class="search-input" type="search" placeholder="جست‌وجو در محصولات..."
+                    aria-label="جست‌وجو در محصولات">
 
                 <div class="sort-row">
-                    <label for="sort">مرتب سازی:</label>
-                    <select id="sort">
-                        <option>پرفروش ترین</option>
-                        <option> جدیدترین</option>
-                        <option> ارزان ترین</option>
-                        <option> گران ترین</option>
+                    <label for="sort">مرتب‌سازی:</label>
+                    <select id="sort" class="sort-select">
+                        <option>پرفروش‌ترین</option>
+                        <option>جدیدترین</option>
+                        <option>ارزان‌ترین</option>
+                        <option>گران‌ترین</option>
                     </select>
-                    <span>نمایش 6 محصول</span>
+                    <span class="product-count">نمایش ۶ محصول</span>
                 </div>
             </div>
 
-            <div class="container">
-                <article class="ad">
-                    <img src="./img/Screenshot 2026-10-19 134100.png" alt="هدفون بلوتوثی انکر">
-                    <div>
-                        <h2>هدفون بلوتوثی انکر مدل SoundCore R50i</h2>
-                        <p>دارای درگاه USB Type-C، فناوری کاهش نویز مکالمه و مقاومت در برابر رطوبت.</p>
-                        <a href="product.html" class="product-link">مشاهده محصول</a>
+            <div class="products-grid">
+                <article class="product-card">
+                    <a href="product.html" class="product-card__image product-card__image--teal">
+                        <img src="./img/Screenshot 2026-10-19 134100.png" alt="هدفون بی‌سیم آریا">
+                    </a>
+                    <div class="product-card__body">
+                        <span class="product-card__badge">ارسال رایگان</span>
+                        <h2 class="product-card__title">
+                            <a href="product.html">هدفون بی‌سیم آریا</a>
+                        </h2>
+                        <div class="product-card__meta">
+                            <span class="product-card__price">۲٬۳۹۰٬۰۰۰ <span>تومان</span></span>
+                            <span class="product-card__rating"><span class="product-card__star">★</span> ۴٫۸</span>
+                        </div>
                     </div>
                 </article>
 
-                <article class="ad">
-                    <img src="./img/07c5c094b77a8abc82d19ac2db89e7974fcf4568_1788182319.png" alt="ساعت هوشمند لیواکس">
-                    <div class="product-info">
-                        <h2>ساعت هوشمند لیواکس مدل GS-59</h2>
-                        <p>ساعت هوشمند ۴۹ میلی‌متری با بند سیلیکونی.</p>
-                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                <article class="product-card">
+                    <a href="product.html" class="product-card__image product-card__image--blue">
+                        <img src="./img/07c5c094b77a8abc82d19ac2db89e7974fcf4568_1788182319.png" alt="ساعت هوشمند نوا">
+                    </a>
+                    <div class="product-card__body">
+                        <span class="product-card__badge">ارسال رایگان</span>
+                        <h2 class="product-card__title">
+                            <a href="product.html">ساعت هوشمند نوا</a>
+                        </h2>
+                        <div class="product-card__meta">
+                            <span class="product-card__price">۳٬۹۹۰٬۰۰۰ <span>تومان</span></span>
+                            <span class="product-card__rating"><span class="product-card__star">★</span> ۴٫۶</span>
+                        </div>
                     </div>
                 </article>
 
-                <article class="ad">
-                    <img src="./img/29082e3b70092f74b4e9fcfa95d1ec7fd00226b6_1786911148.png"
-                        alt="دوربین دیجیتال کانن EOS 2000D">
-                    <div class="product-info">
-                        <h2>دوربین دیجیتال کانن EOS 2000D</h2>
-                        <p>به همراه لنز ۱۸ تا ۵۵ میلی‌متر IS II.</p>
-                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                <article class="product-card">
+                    <a href="product.html" class="product-card__image product-card__image--green">
+                        <img src="./img/29082e3b70092f74b4e9fcfa95d1ec7fd00226b6_1786911148.png" alt="دوربین چاپ فوری">
+                    </a>
+                    <div class="product-card__body">
+                        <span class="product-card__badge">ارسال رایگان</span>
+                        <h2 class="product-card__title">
+                            <a href="product.html">دوربین چاپ فوری</a>
+                        </h2>
+                        <div class="product-card__meta">
+                            <span class="product-card__price">۵٬۷۹۰٬۰۰۰ <span>تومان</span></span>
+                            <span class="product-card__rating"><span class="product-card__star">★</span> ۴٫۸</span>
+                        </div>
                     </div>
                 </article>
 
-                <article class="ad">
-                    <img src="./img/17ae63e25a8aaf344e82ff6184f75cc77e15c0c7_1788177806.png"
-                        alt="ساعت هوشمند KX33 PLUS">
-                    <div class="product-info">
-                        <h2>ساعت هوشمند KX33 PLUS</h2>
-                        <p>ساعت هوشمند ۴۶ میلی‌متری با بند سیلیکونی.</p>
-                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                <article class="product-card">
+                    <a href="product.html" class="product-card__image product-card__image--yellow">
+                        <img src="./img/17ae63e25a8aaf344e82ff6184f75cc77e15c0c7_1788177806.png" alt="کیبورد مکانیکی">
+                    </a>
+                    <div class="product-card__body">
+                        <span class="product-card__badge">ارسال رایگان</span>
+                        <h2 class="product-card__title">
+                            <a href="product.html">کیبورد مکانیکی</a>
+                        </h2>
+                        <div class="product-card__meta">
+                            <span class="product-card__price">۱٬۸۹۰٬۰۰۰ <span>تومان</span></span>
+                            <span class="product-card__rating"><span class="product-card__star">★</span> ۴٫۶</span>
+                        </div>
                     </div>
                 </article>
 
-                <article class="ad">
-                    <img src="./img/18438c2cc0bbf359df1024d0342135410fe29084_1791277938.png"
-                        alt="هدفون بلوتوثی موزیک آپولو">
-                    <div class="product-info">
-                        <h2>هدفون بلوتوثی موزیک آپولو RAY/21/RO</h2>
-                        <p>هدفون بی‌سیم با طراحی ساده و زیبا.</p>
-                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                <article class="product-card">
+                    <a href="product.html" class="product-card__image product-card__image--cyan">
+                        <img src="./img/18438c2cc0bbf359df1024d0342135410fe29084_1791277938.png" alt="اسپیکر قابل حمل">
+                    </a>
+                    <div class="product-card__body">
+                        <span class="product-card__badge">ارسال رایگان</span>
+                        <h2 class="product-card__title">
+                            <a href="product.html">اسپیکر قابل حمل</a>
+                        </h2>
+                        <div class="product-card__meta">
+                            <span class="product-card__price">۱٬۴۵۰٬۰۰۰ <span>تومان</span></span>
+                            <span class="product-card__rating"><span class="product-card__star">★</span> ۴٫۳</span>
+                        </div>
                     </div>
                 </article>
 
-                <article class="ad">
-                    <img src="./img/2cb5cafe0d6397fef7c6c45cf3d6bbdc70febbf5_1786538653.png"
-                        alt="لپ‌تاپ لنوو V15 G4 IRU">
-                    <div class="product-info">
-                        <h2>لپ‌تاپ لنوو V15 G4 IRU</h2>
-                        <p>پردازنده Core i3، رم ۸ گیگابایت، حافظه SSD با ظرفیت ۲۵۶ گیگابایت و نمایشگر Full HD.</p>
-                        <a href="product.html" class="product-link">مشاهده محصول</a>
+                <article class="product-card">
+                    <a href="product.html" class="product-card__image product-card__image--purple">
+                        <img src="./img/2cb5cafe0d6397fef7c6c45cf3d6bbdc70febbf5_1786538653.png" alt="ماگ سفری استیل">
+                    </a>
+                    <div class="product-card__body">
+                        <span class="product-card__badge">ارسال رایگان</span>
+                        <h2 class="product-card__title">
+                            <a href="product.html">ماگ سفری استیل</a>
+                        </h2>
+                        <div class="product-card__meta">
+                            <span class="product-card__price">۸۹۰٬۰۰۰ <span>تومان</span></span>
+                            <span class="product-card__rating"><span class="product-card__star">★</span> ۴٫۲</span>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -153,13 +205,13 @@
     </main>
 
     <footer class="footer">
-        <p>بازارینو؛ خرید ساده و مطمئن</p>
+        <p class="footer__tagline">بازارینو؛ خرید ساده و مطمئن</p>
         <div class="footer-link">
             <a href="#">پشتیبانی</a>
             <a href="#">قوانین و شرایط</a>
             <a href="#">اینستاگرام</a>
         </div>
-        <p>&copy; 1405</p>
+        <p class="footer__copy">&copy; ۱۴۰۵</p>
     </footer>
 </body>
 
